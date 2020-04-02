@@ -1,0 +1,918 @@
+body a {
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+}
+
+input[type="button"] {
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+}
+
+input {
+    border-radius: 5px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 4px;
+}
+
+select {
+    border-radius: 5px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #ccc;
+    width: 70%;
+}
+
+.txt {
+    border: 1px solid #ccc;
+    width: 70% !important;
+}
+
+.xzkc {
+    width: 30%;
+}
+
+.gmjl {
+    float: left;
+    color: #fff;
+    padding: 1em;
+}
+
+.xzkc_mar_top {
+    margin-top: 2em;
+}
+
+.course_form_box {
+    margin: 2em
+}
+
+h1, h2, h3, h4, h5, h6 {
+    padding: 0 0;
+    margin: 0 0;
+}
+
+p {
+    padding: 0 0;
+    margin: 0 0;
+}
+
+ul {
+    padding: 0 0;
+    margin: 0 0;
+}
+
+body {
+    padding: 0 0;
+    margin: 0 0;
+    font-family: 'Open Sans', sans-serif;
+    background: #eee;
+}
+
+.container {
+    margin-top: 1em;
+}
+
+.logo {
+    font-size: 16px !important;
+    /* This logo is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the logo elements */
+
+    width: 45%;
+    position: relative;
+    background: #B6B6B6;
+    color: #fff;
+    text-align: center;
+    padding: 1em 1em; /* Adjust to suit */
+    margin: 1em auto /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the logo 'graphics' take up 24px themselves so we double it. */
+}
+
+.logo:before, .logo:after {
+    content: "";
+    position: absolute;
+    display: block;
+    bottom: -1em;
+    border: 1.5em solid #B6B6B6;
+    z-index: -1;
+}
+
+.logo:before {
+    left: -2em;
+    border-right-width: 1.5em;
+    border-left-color: transparent;
+}
+
+.logo:after {
+    right: -2em;
+    border-left-width: 1.5em;
+    border-right-color: transparent;
+}
+
+.logo .logo-content:before, .logo .logo-content:after {
+    content: "";
+    position: absolute;
+    display: block;
+    border-style: solid;
+    border-color: #804f7c transparent transparent transparent;
+    bottom: -1em;
+}
+
+.logo .logo-content:before {
+    left: 0;
+    border-width: 1em 0 0 1em;
+}
+
+.logo .logo-content:after {
+    right: 0;
+    border-width: 1em 1em 0 0;
+}
+
+.logo a h1 {
+    font-size: 2.5em;
+    color: #1f99b0;
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-weight: 400;
+}
+
+.logo a {
+    text-decoration: none;
+}
+
+.main-grid {
+    padding: 0;
+}
+
+
+p.beaut-link {
+    font-size: .96em;
+    text-transform: capitalize;
+    color: #999;
+    margin-top: .2em;
+    font-style: italic;
+}
+
+p.beaut-link a {
+    text-decoration: none;
+    color: #E56814;
+}
+
+p.beaut-link span {
+    color: #E56814;
+}
+
+.beaut-bottoms p {
+    font-size: 1em;
+    color: #999;
+}
+
+.glyphicon {
+    font-size: 1.5em;
+    vertical-align: top;
+    margin-right: .5em;
+}
+
+p.beaut-link1 {
+    font-size: .96em;
+    color: #999;
+    line-height: 1.8em;
+    margin: 1em 0;
+}
+
+a.button {
+    font-size: 1em;
+    text-transform: capitalize;
+    color: #E56814;
+}
+
+.chart canvas {
+    padding: 2em 0;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+}
+
+/*--chart--*/
+.news {
+    padding: 1em 0 1em 0;
+    background: #1f99b0;
+}
+
+.new1 {
+    float: left;
+}
+
+.new2 {
+    float: right;
+}
+
+.new1 h4 {
+    font-size: 1.2em;
+    color: #fff;
+    padding: .2em 1em;
+    text-transform: capitalize;
+}
+
+.new2 {
+    float: right;
+    margin: .2em .8em;
+}
+
+.new2 a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 600;
+    text-transform: capitalize;
+    background: #588E27;
+    padding: .5em .8em;
+    border-radius: 4px;
+}
+
+.news-grids {
+    margin-top: -3em;
+    background: #fff;
+}
+
+.new-bottom1 {
+    float: left;
+    width: 35%;
+    margin-right: 2%;
+}
+
+.new-bottom {
+    padding: 1.5em .3em;
+    border-bottom: 1px solid #ddd;
+}
+
+.new-bottom:last-child {
+    border-bottom: none;
+}
+
+
+/* start equalizer */
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+#eq {
+    text-align: center;
+}
+
+#eq span {
+    height: 400px;
+    display: inline-block;
+    margin: 0px 10px;
+}
+
+.wrp-eq {
+    margin: 0 auto;
+}
+
+.ui-corner-all {
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -o-border-radius: 0;
+}
+
+/* end	equalizer */
+#container {
+    width: 25%;
+    float: left;;
+    height: 100%;
+    color: #ccc;
+    text-align: center;
+    font-family: arial;
+    line-height: 50px;
+    padding: 20px 0 10px;
+}
+
+#loader {
+    height: 50px;
+    width: 50px;
+    border: 3px dashed #d9d9d9;
+    margin: 0 auto;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    animation: loader 3s infinite linear;
+    -webkit-animation: loader 3s infinite linear;
+}
+
+@keyframes loader {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    50% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+    100% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+}
+
+@-webkit-keyframes loader {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@-moz-keyframes loader {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+.video {
+    margin-top: 3em;
+}
+
+.crowe {
+    width: 50%;
+    float: left;
+    margin-right: 2%;
+}
+
+.user {
+    background: #fff;
+    padding: 1em;
+}
+
+.user_1 {
+    border-bottom: 1px solid #eee;
+}
+
+.kcjl_box {
+    margin-bottom: 100px;
+
+}
+
+.user_1:last-child {
+    border-bottom: none;
+
+}
+
+.user1 {
+    float: left;
+    width: 30%;
+    margin-right: 2%;
+}
+
+.user2 ul li {
+    list-style: none;
+    margin: .32em 0;
+    font-size: .96em;
+    color: #999;
+}
+
+.user2 ul li a {
+    color: #999;
+    text-decoration: none;
+}
+
+.user2 h4 {
+    font-size: 1.3em;
+    text-transform: capitalize;
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-weight: bold;
+}
+
+.user2 {
+    float: right;
+    width: 66%;
+}
+
+span.glyphicon.glyphicon-map-marker, span.glyphicon.glyphicon-envelope, span.glyphicon.glyphicon-heart-empty {
+    font-size: .8em;
+    background: #222;
+    color: #fff;
+    padding: .6em .6em;
+    border-radius: 22px;
+}
+
+.flowers {
+    text-align: center;
+    background: #1f99b0;
+}
+
+.flower-grid {
+    padding: 1.5em 0;
+}
+
+.flower-grid h5 {
+    font-size: 1.5em;
+    color: #fff;
+}
+
+.flower-grid p {
+    font-size: .95em;
+    color: #ddd;
+    text-transform: capitalize;
+    margin-top: .5em;
+}
+
+.flower-grid:hover {
+    background: #6CAB36;
+}
+
+.search {
+    background: #fff;
+    padding: 1em;
+    margin-top: 3em;
+    position: relative;
+}
+
+.sub {
+    margin: 1.5em 0;
+    background: url(../images/quot.png) no-repeat 5px 9px;
+}
+
+
+.login-form input[type="text"] {
+    width: 100%;
+    padding: .35em 2.5em;
+    outline: none;
+    font-size: 1em;
+    /*font-style: italic;*/
+    background: url(../images/user1.png) no-repeat 0px 0px;
+    border: 1px solid #ccc;
+}
+
+.change_password {
+    margin-top: 2rem;
+}
+
+.changeBtn {
+    border-radius: 20px;
+}
+
+.changeBtn1 {
+    border-radius: 20px;
+    width: 70%;
+    margin-left: 30%;
+    height: 40px;
+    line-height: 30px;
+    background: #1f99b0;
+    color: #fff;
+}
+
+.change_password_box {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.change_password_box input {
+    width: 82%;
+    border: 1px solid #ccc;
+
+}
+
+.change_password_tit {
+    width: 18%;
+}
+
+.change_password_tit1 {
+    margin-top: 2rem;
+}
+
+.change_password_yzm {
+    margin-top: 2rem;
+    width: 50% !important;
+}
+
+.tel_code {
+    width: 30% !important;
+    text-indent: 0 !important;
+    text-align: center;
+    height: 32px;
+    margin-left: 2%;
+    margin-top: 2rem;
+    border-radius: 5px;
+    background: #1f99b0;
+    color: #fff;
+}
+
+.login-form input[type="password"] {
+    width: 100%;
+    padding: .35em 2.5em;
+    outline: none;
+    font-size: 1em;
+    /*font-style: italic;*/
+    background: url(../images/lock.png) no-repeat 0px 0px;
+    border: 1px solid #ccc;
+}
+
+.login-form input[type="submit"] {
+    width: 100%;
+    padding: .5em;
+    height: 40px !important;
+    font-size: 1.2em;
+    background: #1f99b0;
+    border: none;
+    color: #fff;
+    outline: none;
+    text-transform: capitalize;
+    border-radius: 20px;
+}
+
+.login-form {
+    margin-top: 3em;
+    background: #fff;
+    padding: 2em 2em;
+}
+
+.login-form h4 {
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 1.6em;
+    text-transform: capitalize;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: .5em;
+}
+
+.pass {
+    margin: 2em 0;
+}
+
+.login-form p {
+    font-size: .9em;
+    text-align: center;
+    margin-top: 1em;
+    color: #555;
+}
+
+
+.slider1 {
+    padding: 1em 1em;
+}
+
+#flexiselDemo1, #flexiselDemo2, #flexiselDemo3 {
+    display: none;
+}
+
+.nbs-flexisel-ul {
+    position: relative;
+    width: 9999px;
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    text-align: center;
+}
+
+.nbs-flexisel-inner {
+    overflow: hidden;
+    margin-top: 0;
+}
+
+.nbs-flexisel-item {
+    float: left;
+    padding: 0px 0px;
+    cursor: pointer;
+    position: relative;
+}
+
+ul#flexiselDemo1 li a {
+    text-decoration: none;
+    display: block;
+}
+
+ul#flexiselDemo1 li a h4 {
+    text-align: left;
+    padding-left: 14px;
+    color: #478D06;
+    font-family: 'Exo2-Medium';
+    font-size: 1.2em;
+    margin-top: 0.5em;
+}
+
+ul#flexiselDemo1 li a h4:hover {
+    color: #DBC585;
+}
+
+.nbs-flexisel-item > a img {
+    cursor: auto;
+    position: relative;
+    width: 100%;
+    margin: 0;
+}
+
+.gallery {
+    background: #fff;
+    margin-top: -2em !important;
+}
+
+.gallery h4 {
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 1.6em;
+    text-transform: capitalize;
+    font-weight: 600;
+    background: #1f99b0;
+    color: #fff;
+    padding: 1em 0 1em 1em;
+}
+
+.main-bottoms {
+    margin-top: 3em;
+}
+
+.main-top {
+    background: #222;
+    padding: 1em;
+
+}
+
+div#myTabContent {
+    background: #fff;
+    padding: 1.1em 1em;
+}
+
+p.tab1 {
+    font-size: .96em;
+    color: #999;
+    line-height: 1.5em;
+    margin-bottom: 1em;
+}
+
+p.tab2 {
+    font-size: .96em;
+    color: #999;
+    line-height: 1.5em;
+}
+
+a.but {
+    background: #222;
+    padding: .8em 1em;
+    color: #fff;
+
+    font-size: .95em;
+    width: 39%;
+    margin: 1em auto;
+    display: block;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.copy-section {
+    padding: 2em 0;
+    text-align: center;
+    margin-top: 3em;
+}
+
+.copy-section p {
+    font-size: 0.9em;
+    color: #999;
+    font-weight: 400;
+}
+
+.copy-section a {
+    font-size: 1em;
+    color: #999;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.copy-section a:hover {
+    color: #999;
+}
+
+.copy-section a {
+    margin: 0 0.3em;
+}
+
+/**responsive**/
+
+@media (max-width: 1080px) {
+    .beautiful h3 {
+        font-size: 1.5em;
+    }
+
+    .glyphicon {
+        margin-right: .1em;
+    }
+
+    #eq span {
+        margin: 0px 5px;
+    }
+
+    .user2 ul li {
+        font-size: .8em;
+    }
+
+    .social-icon a i {
+        margin: 0 0px 0 0;
+    }
+
+}
+
+@media (max-width: 991px) {
+    .logo {
+        font-size: 16px !important;
+        width: 44%;
+    }
+
+    .logo a h1 {
+        font-size: 2em;
+    }
+
+    .beautiful img {
+        margin: 0 auto;
+    }
+
+    .wrp-eq {
+        float: left;
+        width: 40%;
+    }
+
+    .jp-video {
+        text-align: center;
+    }
+
+    #eq span {
+        margin: 0px 26px;
+    }
+
+    div#jquery_jplayer_1 {
+        width: 100% !important;
+    }
+
+    img#jp_poster_0 {
+        width: 100% !important;
+    }
+
+    .main-grid1 {
+        margin-top: 3em;
+    }
+
+    .main-grid2 {
+        margin-top: 0;
+    }
+
+    .flower-grid {
+        float: left;
+        width: 33.3%;
+    }
+
+    .enviar {
+        padding: 2em 0 2em;
+    }
+
+    .main-top2 {
+        float: left;
+        width: 25%;
+
+    }
+
+    .main-top2 {
+        padding: 0 7px 0 51px;
+    }
+
+    .main-bottom {
+        float: left;
+        width: 100%;
+        padding: 0px 0px;
+    }
+
+    .main1 h4 {
+        font-size: 1em;
+    }
+
+    .main3 a {
+        font-size: .9em;
+    }
+
+    a.but {
+        width: 19%;
+    }
+
+    .main-bottom:nth-child(2) {
+        margin: 2em 0;
+    }
+
+    a.but {
+        margin: 1.5em auto;
+    }
+
+    .client-grid {
+        float: left;
+        width: 25%;
+    }
+}
+
+@media (max-width: 768px) {
+    .graph-container {
+        position: relative;
+        width: 100%;
+        height: 300px;
+        background: #2F2E2C;
+    }
+}
+
+@media (max-width: 640px) {
+    .beautiful h3 {
+        font-size: 1.5em;
+    }
+
+    .beautiful h3 {
+        font-size: 1.35em;
+    }
+
+    a.but {
+        width: 22%;
+    }
+
+    .client-grids {
+        padding: 2em 0;
+    }
+
+    #eq span {
+        margin: 0px 17px;
+    }
+
+    .flower-grid h5 {
+        font-size: 1.3em;
+    }
+
+    .social-icon a i {
+        margin: 0 7px 0 0;
+    }
+
+    .nbs-flexisel-nav-left, .nbs-flexisel-nav-right {
+        margin-top: 2em;
+    }
+
+    .gallery h4 {
+        font-size: 1.2em;
+    }
+
+    .contact h4, .login-form h4 {
+        font-size: 1.4em;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 13px !important;
+        width: 60%;
+    }
+
+    #eq span {
+        margin: 0px 7px;
+    }
+
+    .crowe {
+        width: 100%;
+        float: none;
+    }
+
+
+    .user2 ul li {
+        font-size: .85em;
+    }
+
+    .copy-section {
+
+        margin-top: 1em;
+    }
+
+    .main-top {
+        background: #222;
+        padding: .5em;
+    }
+
+    .main1 h4 {
+        margin-top: 0.5em;
+    }
+}
+
+@media (max-width: 320px) {
+    .logo {
+        font-size: 12px !important;
+        width: 77%;
+    }
+
+}
