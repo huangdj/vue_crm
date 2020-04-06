@@ -916,3 +916,10 @@ a.but {
     }
 
 }
+
+.glyphicon-chevron-left {
+    opacity: 0.45;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    width: 10px;
+}

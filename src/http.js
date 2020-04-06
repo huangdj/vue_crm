@@ -4,7 +4,7 @@ import router from '@/router'
 
 // axios 配置
 axios.defaults.timeout = 5000;
-axios.defaults.baseURL = 'http://127.0.0.1:8000';
+axios.defaults.baseURL = 'https://crm.holyzq.com';
 
 // http request 拦截器
 axios.interceptors.request.use(

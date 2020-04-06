@@ -1,112 +1,127 @@
 <template>
     <div>
-        <!--购买记录-->
-        <div class="russell-section">
-            <div class="crowe">
-                <div class="flowers">
-                    <div class="gmjl">
-                        购买记录
-                    </div>
-                    <div class="clearfix"></div>
+        <!---header--->
+        <div class="header-section">
+            <div class="container">
+                <Router-link :to="{name:'Home'}"><i class="glyphicon glyphicon-chevron-left"></i></Router-link>
+                <div class="logo">
+                    <a href="index.html" class="logo-content"><h1>您的课程记录</h1></a>
                 </div>
+            </div>
+        </div>
+        <!---header--->
+        <!--购买记录-->
+        <div class="col-md-7">
+            <div class="russell-section">
+                <div class="crowe">
+                    <div class="flowers">
+                        <div class="gmjl">
+                            购买记录
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
 
-                <div class="user user_1" v-for="item in buy_records">
-                    <div class="user1">
-                        <img :src="item.course.image" class="img-responsive" alt="">
+                    <div class="user user_1" v-for="item in buy_records">
+                        <div class="user1">
+                            <img :src="item.course.image" class="img-responsive" alt="">
+                        </div>
+                        <div class="user2">
+                            <h5>{{item.course.name}}</h5>
+                            <ul>
+                                <li><span>购买课时：</span> {{item.c_hour}}节</li>
+                                <li><span>课程单价：</span> {{item.c_price}}元</li>
+                                <li><span>课程总价：</span> {{item.c_hour * item.c_price|num_format}}元</li>
+                                <li><span>购买时间：</span> {{item.paid_at}}</li>
+                            </ul>
+                        </div>
+                        <div class="clearfix"></div>
                     </div>
-                    <div class="user2">
-                        <h5>{{item.course.name}}</h5>
-                        <ul>
-                            <li><span>购买课时：</span> {{item.c_hour}}节</li>
-                            <li><span>课程单价：</span> {{item.c_price}}元</li>
-                            <li><span>课程总价：</span> {{item.c_hour * item.c_price|num_format}}元</li>
-                            <li><span>购买时间：</span> {{item.paid_at}}</li>
-                        </ul>
-                    </div>
-                    <div class="clearfix"></div>
                 </div>
             </div>
         </div>
 
         <div class="clearfix"></div>
         <!--赠送记录-->
-        <div class="russell-section" v-if="relation_records != ''">
-            <div class="crowe">
-                <div class="flowers">
-                    <div class="gmjl">
-                        赠送记录
-                    </div>
-                    <div class="clearfix"></div>
-                </div>
-
-                <div class="user user_1" v-for="vo in relation_records">
-                    <div class="user1">
-                        <img :src="vo.course.image" class="img-responsive" alt="">
-                    </div>
-                    <div class="user2">
-                        <h5>{{vo.course.name}}</h5>
-                        <ul>
-                            <li><span>赠送课时：</span> {{vo.g_hour}}节</li>
-                            <li><span>赠送日期：</span> {{vo.paid_at}}</li>
-                        </ul>
-                    </div>
-                    <div class="clearfix"></div>
-                </div>
-            </div>
-        </div>
-
-        <!--上课记录-->
-        <div class="russell-section">
-
-            <div class="crowe">
-                <div class="flowers">
-                    <div class="gmjl">
-                        上课记录
-                    </div>
-                    <div class="clearfix"></div>
-                </div>
-                <div class="kcjl_box">
-
-                    <div class="user user_1" v-for="record in records">
-                        <div v-if="record.course != null">
-                            <div class="user1">
-                                <img :src="record.course.image" class="img-responsive" alt="">
-                            </div>
-                            <div class="user2">
-                                <h5>{{record.course.name}}</h5>
-                                <ul>
-                                    <li>
-                                        <span>课程类型：</span> 购课课程
-                                    </li>
-                                    <li><span>课时价格：</span> {{record.surplus_price}}元</li>
-                                    <li><span>剩余课时：</span> {{record.surplus_hour}}节</li>
-                                    <li style="color: #f4645f"><span>上课教练：</span> {{record.user.realname}}</li>
-                                    <li><span>上课日期：</span> {{record.updated_at}}</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div v-if="record.relation_course != null">
-                            <div class="user1">
-                                <img :src="record.relation_course.image" class="img-responsive" alt="">
-                            </div>
-                            <div class="user2">
-                                <h5>{{record.relation_course.name}}</h5>
-                                <ul>
-                                    <li>
-                                        <span>课程类型：</span> 赠送课程
-                                    </li>
-                                    <li><span>剩余课时：</span> {{record.surplus_hour}}节</li>
-                                    <li style="color: #f4645f"><span>上课教练：</span> {{record.user.realname}}</li>
-                                    <li><span>上课日期：</span> {{record.updated_at}}</li>
-                                </ul>
-                            </div>
+        <div class="col-md-7">
+            <div class="russell-section" v-if="relation_records != ''">
+                <div class="crowe">
+                    <div class="flowers">
+                        <div class="gmjl">
+                            赠送记录
                         </div>
                         <div class="clearfix"></div>
                     </div>
 
-                    <div style="text-align: center;margin-top:7px;">
-                        <span class="more" style="color: #999;font-size: .85em;display: none">暂时没有更多了</span>
+                    <div class="user user_1" v-for="vo in relation_records">
+                        <div class="user1">
+                            <img :src="vo.course.image" class="img-responsive" alt="">
+                        </div>
+                        <div class="user2">
+                            <h5>{{vo.course.name}}</h5>
+                            <ul>
+                                <li><span>赠送课时：</span> {{vo.g_hour}}节</li>
+                                <li><span>赠送日期：</span> {{vo.paid_at}}</li>
+                            </ul>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--上课记录-->
+        <div class="col-md-7">
+            <div class="russell-section">
+
+                <div class="crowe">
+                    <div class="flowers">
+                        <div class="gmjl">
+                            上课记录
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="kcjl_box">
+
+                        <div class="user user_1" v-for="record in records">
+                            <div v-if="record.course != null">
+                                <div class="user1">
+                                    <img :src="record.course.image" class="img-responsive" alt="">
+                                </div>
+                                <div class="user2">
+                                    <h5>{{record.course.name}}</h5>
+                                    <ul>
+                                        <li>
+                                            <span>课程类型：</span> 购课课程
+                                        </li>
+                                        <li><span>课时价格：</span> {{record.surplus_price}}元</li>
+                                        <li><span>剩余课时：</span> {{record.surplus_hour}}节</li>
+                                        <li style="color: #f4645f"><span>上课教练：</span> {{record.user.realname}}</li>
+                                        <li><span>上课日期：</span> {{record.updated_at}}</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div v-if="record.relation_course != null">
+                                <div class="user1">
+                                    <img :src="record.relation_course.image" class="img-responsive" alt="">
+                                </div>
+                                <div class="user2">
+                                    <h5>{{record.relation_course.name}}</h5>
+                                    <ul>
+                                        <li>
+                                            <span>课程类型：</span> 赠送课程
+                                        </li>
+                                        <li><span>剩余课时：</span> {{record.surplus_hour}}节</li>
+                                        <li style="color: #f4645f"><span>上课教练：</span> {{record.user.realname}}</li>
+                                        <li><span>上课日期：</span> {{record.updated_at}}</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+
+                        <div style="text-align: center;margin-top:7px;">
+                            <span class="more" style="color: #999;font-size: .85em;display: none">暂时没有更多了</span>
+                        </div>
                     </div>
                 </div>
             </div>
