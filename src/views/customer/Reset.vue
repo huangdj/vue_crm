@@ -2,6 +2,7 @@
     <div>
         <div class="calendra">
             <div class="login-form">
+                <Router-link :to="{name:'Login'}"><i class="glyphicon glyphicon-chevron-left"></i></Router-link>
                 <h4>修改密码</h4>
                 <form v-on:submit.prevent="onSubmit">
                     <div class="change_password_box">
